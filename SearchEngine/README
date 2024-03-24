@@ -1,0 +1,16 @@
+Make sure data directory contains "relevancejudgement.txt" and "topics.nxml"
+
+Run main.py
+
+You can use an alternate query in the main.py file by simply grabbing a topic summary or inputting your own, however, the evaluator already uses all possible queries from the queries.db.
+
+Retrieved Documents are the top 10 k documents most relevant to query.
+
+Evaluator is a dictionary structured by the query topic number and metrics.
+All queries (structured by up to 30 topic numbers) are used in the retrieval along with their evaluation metrics.
+
+NOTE:
+1. IndexingModule has been commented out as the index is already cached and present in the root directory.
+Uncomment if you wish to create a new index.
+2. Due to the sheer size, the raw data repository has been excluded from submission and is not needed as they have been parsed and saved in the documents.db file
+This means that the DocumentsDB.py file will not work (redundant for searching).
